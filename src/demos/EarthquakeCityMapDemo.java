@@ -26,15 +26,16 @@ import parsing.ParseFeed;
 /** EarthquakeCityMapDemo
  * An application with an interactive map displaying earthquake data.
  * Author: UC San Diego Intermediate Software Development MOOC team
- * @author Your name here
- * Date: July 17, 2015
+ * @author Emanuele Bellini
+ * Date: September 30, 2016
  * */
 public class EarthquakeCityMapDemo extends PApplet {
 
 	// You can ignore this.  It's to keep eclipse from generating a warning.
-	//private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
 	// IF YOU ARE WORKING OFFLINE, change the value of this variable to true
+	@SuppressWarnings("unused")
 	private static final boolean offline = false;
 	
 	// Less than this threshold is a light earthquake
@@ -49,6 +50,7 @@ public class EarthquakeCityMapDemo extends PApplet {
 	private UnfoldingMap map;
 	
 	//feed with magnitude 2.5+ Earthquakes
+	@SuppressWarnings("unused")
 	private String earthquakesURL = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom";
 
 	
